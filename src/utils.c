@@ -1,5 +1,4 @@
 #include <stdint.h>
-#include <unistd.h>
 #include <stdlib.h>
 
 size_t	ft_strlen(const char *str)
@@ -30,8 +29,8 @@ static void	ft_bzero(void *str, size_t n)
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*result;
-	size_t	res_size;
+	void *result;
+	size_t res_size;
 
 	if (count == 0 || size == 0)
 		return (malloc(0));

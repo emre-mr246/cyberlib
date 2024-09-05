@@ -1,17 +1,17 @@
 #ifndef CYBERLIB_H
 # define CYBERLIB_H
 
-#include <unistd.h>
+# include <unistd.h>
 
-#define BUFFER_SIZE 4096
+# define BUFFER_SIZE 4096
 
 // BASE64
-char *base64_encode(const char *data);
-char *base64_decode(const char *data);
+char	*base64_encode(const char *data);
+char	*base64_decode(const char *data);
 
-//URL
-char *url_encode(const char *str);
-char *url_decode(const char *str);
+// URL
+char	*url_encode(const char *str);
+char	*url_decode(const char *str);
 
 // UTILS
 size_t	ft_strlen(const char *str);
